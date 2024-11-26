@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    margin-right: 0;
+}
+
+body {
+    background-color: #3f3f3f
+}
+
+/* MOVILES */
+
+/* INICIO DE HEADER */
+
+.noticias {
+    text-align: center;
+    background: #F7C325;
+    color: #202324;
+    font-weight: 600;
+}
+
+header{
+    background-color: #202324;
+    color: whitesmoke;
+}
+
+header .navbar .container-fluid{
+    display: inline-block;
+}
+
+.navbar button{
+    background-color: #69c2f0;
+    backface-visibility: visible;
+}
+
+.nav-item .nav-link{
+    color: aliceblue;
+    transition: color .25s; 
+}
+
+/* header nav .cuenta a{
+    max-width: 25px;
+    max-height: 25px;
+    }
+} */
+
+header nav .cuenta a img{ 
+    max-width: 25px;
+    max-width: 25px;
+    margin-left: 20px;
+}
+
+/* FIN DE HEADER */
+
+/* INICIO DE HOME */
+
+
+main {
+    background-color: #3f3f3f;
+    padding: 2%;
+    padding-right: 1em;
+}
+
+main h2 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+main h5 {
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 20%;
+    }
+
+main p {
+    text-align: center;
+    font-weight: 600;
+    color: #202324;
+    background-color: #d2e4e1;
+    display: inline inline-block;
+    border-radius: 5rem;
+}
+
+
+main img{
+    flex-direction: row;
+    max-width: 40%;
+}
+
+main .col-descuento .col{
+    margin-bottom: 15px;
+}
+
+main .row .col .card{
+    flex-direction: row;
+}
+
+main .row .card{
+    flex-direction: row;
+}
+
+main .row .col-novedades{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 175px);
+    margin-bottom: 15px;
+}
+
+
+main .card-body{
+    background-color: #202324;
+    color: whitesmoke;
+    display: block;
+}
+
+
+
+
+
+/* FIN DE HOME */
+
+/* INICIO DE FOOTER */
+
+
+footer{
+    text-align: center;
+    background-color: #69c2f0;
+}
+footer img{
+    max-width: 45px;
+    background-color: transparent;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+
+/* FIN DE FOOTER */
+
+
+
+
+/* TABLETS */
+
+@media screen and (min-width:600px){
+
+    /* INICIO DE HEADER */
+    header .navbar .container-fluid{
+        display: flex;
+    }
+
+    header .navbar button{
+        margin-left: 3%;
+    }
+
+    header nav .navbar-nav{ 
+        flex-direction: row;
+        gap: 5em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    header nav .cuenta a img{ 
+        max-width: 50px;
+        max-width: 50px;
+        margin-left: 20px;
+    }
+
+
+    /* FIN DE HEADER */
+
+    /* INICIO DE HOME */
+
+
+    
+    main .row .col-novedades{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 175px);
+        gap: 1em;
+    }
+
+    main .row .col-descuento{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 175px);
+        gap: 1em;
+    }
+
+    footer{
+        padding-bottom: 40px;
+    }   
+}
+
+
+/* EQUIPOS DE ESCRITORIO */
+
+@media screen and (min-width:1024px){
+
+    #navbarNav{
+        display: flex;
+        justify-content: center;
+    }
+    header nav button{
+    display: none;
+}
+
+main #novedades{
+    padding-bottom: 20px;
+}
+main .row .col-novedades{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 110px);
+    gap: 2em;
+}
+
+main .row .col-descuento{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 50px);
+    gap: 2em;
+}
+
+main img {
+   max-width: 20%;
+}
+
+main h5{
+    padding-bottom: 2%;
+}
+
+/* FIN DE HOME */
+
+/* INICIO DE FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+
+
+/* PC ARMADAS */
+
+/* DISPOSITIVOS MOVILES */
+
+main .col-pc-armadas .card{
+    margin-bottom: 15px;
+}
+
+
+/* TABLETS */
+
+@media screen and (min-width:600px){
+main .row .col-pc-armadas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 175px);
+    gap: 2em;
+}
+
+}
+
+/* EQUIPOS DE ESCRITORIO */
+@media screen and (min-width:1024px){
+main .row .col-pc-armadas{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 110px);
+    gap: 2em;
+}
+}
